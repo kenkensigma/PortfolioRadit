@@ -189,13 +189,12 @@ class ProjectsData
                     'Duration' => '2 weeks',
                 ],
 
-                'next' => ['slug' => 'zbooks', 'title' => 'ZBooks SMK'],
+                'next' => ['slug' => 'ZBooks', 'title' => 'ZBooks SMK'],
             ],
-
             // ─────────────────────────────────────────────────────────
             'ZBooks' => [
                 'num'    => '04',
-                'slug'   => 'zbooks',
+                'slug'   => 'ZBooks',
                 'title'  => 'ZBooks SMK',
                 'type'   => 'Library Management System',
                 'desc'   => 'A digital school library application built with Laravel 12, featuring role-based access for Admin and Students, book borrowing & return management, automated fine calculation, and monthly reports.',
@@ -210,10 +209,10 @@ class ProjectsData
                 ],
 
                 'images' => [
-                    ['src' => 'images/projects/zbooks/dashboard-admin.jpg', 'caption' => 'Admin Dashboard'],
-                    ['src' => 'images/projects/zbooks/books.jpg',           'caption' => 'Book Catalog'],
-                    ['src' => 'images/projects/zbooks/transactions.jpg',    'caption' => 'Transaction Management'],
-                    ['src' => 'images/projects/zbooks/report.jpg',          'caption' => 'Monthly Report'],
+                    ['src' => 'images/projects/zbooks/dashboard-admin.png', 'caption' => 'Admin Dashboard'],
+                    ['src' => 'images/projects/zbooks/books.png',           'caption' => 'Book Catalog'],
+                    ['src' => 'images/projects/zbooks/transactions.png',    'caption' => 'Transaction Management'],
+                    ['src' => 'images/projects/zbooks/report.png',          'caption' => 'Monthly Report'],
                 ],
 
                 'features' => [
@@ -250,6 +249,7 @@ class ProjectsData
 
                 'next' => ['slug' => 'imaji-digital', 'title' => 'IMAJI DIGITAL'],
             ],
+
             'Bible-Bake Website' => [
                 'num'    => '05',
                 'slug'   => 'bible-bake',
