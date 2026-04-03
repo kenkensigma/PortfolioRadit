@@ -73,7 +73,7 @@ class ProjectsData
                     'Duration' => '1 week',
                 ],
 
-                'next' => ['slug' => 'oop-web-api', 'title' => 'OOP WEB API'],
+                'next' => ['slug' => 'oop-school', 'title' => 'OOP School'],
             ],
 
             // ─────────────────────────────────────────────────────────
@@ -189,63 +189,63 @@ class ProjectsData
                     'Duration' => '2 weeks',
                 ],
 
-                'next' => ['slug' => 'vault-cms', 'title' => 'Vault CMS'],
+                'next' => ['slug' => 'zbooks', 'title' => 'ZBooks SMK'],
             ],
 
             // ─────────────────────────────────────────────────────────
-            'vault-cms' => [
+            'ZBooks' => [
                 'num'    => '04',
-                'slug'   => 'vault-cms',
-                'title'  => 'Vault CMS',
-                'type'   => 'Content Management System',
-                'desc'   => 'A headless CMS with a clean editor experience, media management, versioning, and a powerful REST API.',
-                'color'  => '#1a1200',
-                'accent' => '#fbbf24',
+                'slug'   => 'zbooks',
+                'title'  => 'ZBooks SMK',
+                'type'   => 'Library Management System',
+                'desc'   => 'A digital school library application built with Laravel 12, featuring role-based access for Admin and Students, book borrowing & return management, automated fine calculation, and monthly reports.',
+                'color'  => '#0f1117',
+                'accent' => '#7c6ff7',
                 'url'    => '',
                 'github' => '',
 
                 'overview' => [
-                    'Vault CMS is a headless content management system with a focus on developer experience. Content is managed through a clean, minimal editor interface and served to any frontend via a well-documented REST API.',
-                    'Key differentiators include full content versioning with rollback, a flexible media library with folder organisation, role-based access control for editorial teams, and a webhook system to notify frontends of content changes.',
+                    'ZBooks SMK is a full-featured digital library management system built with Laravel 12, MySQL, and Bootstrap 5. It serves two user roles — Admin and Student — each with a dedicated dashboard and tailored feature set.',
+                    'Key capabilities include a complete book catalog with stock management, a borrowing and return workflow with automated overdue detection and fine calculation, member management, and a monthly report dashboard with an interactive Chart.js graph.',
                 ],
 
                 'images' => [
-                    ['src' => 'images/projects/vault-cms/editor.jpg',   'caption' => 'Content Editor'],
-                    ['src' => 'images/projects/vault-cms/media.jpg',    'caption' => 'Media Library'],
-                    ['src' => 'images/projects/vault-cms/versions.jpg', 'caption' => 'Content Versioning'],
-                    ['src' => 'images/projects/vault-cms/api.jpg',      'caption' => 'REST API Explorer'],
+                    ['src' => 'images/projects/zbooks/dashboard-admin.jpg', 'caption' => 'Admin Dashboard'],
+                    ['src' => 'images/projects/zbooks/books.jpg',           'caption' => 'Book Catalog'],
+                    ['src' => 'images/projects/zbooks/transactions.jpg',    'caption' => 'Transaction Management'],
+                    ['src' => 'images/projects/zbooks/report.jpg',          'caption' => 'Monthly Report'],
                 ],
 
                 'features' => [
-                    ['title' => 'Headless Architecture', 'desc' => 'Content is fully decoupled from presentation. Serve it to any frontend — web, mobile, or third-party apps — via REST API.'],
-                    ['title' => 'Content Versioning',    'desc' => 'Every edit is saved as a version. Roll back to any previous version with a single click, with a full diff view.'],
-                    ['title' => 'Media Library',         'desc' => 'Organised media library with folder structure, image optimisation on upload, and S3-compatible storage support.'],
-                    ['title' => 'Role-Based Access',     'desc' => 'Fine-grained permissions: Admins, Editors, and Viewers each have different capabilities across content types.'],
+                    ['title' => 'Role-Based Access Control',    'desc' => 'Separate dashboards and middleware-protected routes for Admin and Student roles. Admins manage all data; students can only view, borrow, and return books.'],
+                    ['title' => 'Borrow & Return Workflow',     'desc' => 'Students borrow books online with a 7-day due date. The system prevents duplicate borrowing and automatically marks overdue loans. Returns calculate fines at Rp 1,000/day.'],
+                    ['title' => 'Live Stock Management',        'desc' => 'Book stock decrements on borrow and increments on return inside a DB transaction, preventing race conditions and ensuring stock integrity at all times.'],
+                    ['title' => 'Reports & Analytics',          'desc' => 'Monthly borrowing reports with a Chart.js bar chart, top-5 most borrowed books, and a full status breakdown — all filterable by year and month.'],
                 ],
 
                 'challenges' => [
                     [
-                        'challenge' => 'Building an efficient content versioning system without bloating the database',
-                        'solution'  => 'Stored versions as JSON snapshots with a diff algorithm to only save changes between versions, reducing storage by ~60% compared to full copies.',
+                        'challenge' => 'Preventing duplicate active loans for the same book and user',
+                        'solution'  => 'Added a query check before every borrow that looks for an existing transaction with status borrowed or overdue for the same user–book pair, returning a clear error message if found.',
                     ],
                     [
-                        'challenge' => 'S3 storage compatibility without hard-locking to AWS',
-                        'solution'  => 'Used Laravel\'s Filesystem abstraction with a driver interface, allowing the CMS to work with AWS S3, DigitalOcean Spaces, MinIO, or local storage by changing a single config value.',
+                        'challenge' => 'Keeping stock consistent under concurrent borrow requests',
+                        'solution'  => 'Wrapped every borrow and return operation in a DB::transaction() block with a stock guard in the Book model\'s decrementStock() method, ensuring stock never drops below zero.',
                     ],
                 ],
 
                 'tech' => [
-                    'Backend'  => ['Laravel', 'PHP 8.2', 'MySQL'],
-                    'Storage'  => ['AWS S3 / S3-compatible', 'Laravel Filesystem'],
-                    'API'      => ['REST API', 'Laravel Sanctum'],
-                    'Tools'    => ['Redis', 'Laravel Queues', 'Git'],
+                    'Backend'   => ['Laravel 12', 'PHP 8.2', 'MySQL'],
+                    'Frontend'  => ['Blade Templates', 'Bootstrap 5', 'Chart.js'],
+                    'Auth'      => ['Laravel Auth', 'Custom Role Middleware'],
+                    'Tools'     => ['Eloquent ORM', 'Form Requests', 'DB Transactions', 'Git'],
                 ],
 
                 'info' => [
-                    'Type'     => 'CMS / SaaS',
-                    'Year'     => '2024',
+                    'Type'     => 'Web App / Academic Project',
+                    'Year'     => '2025',
                     'Role'     => 'Full Stack Developer',
-                    'Duration' => '5 weeks',
+                    'Duration' => '2 weeks',
                 ],
 
                 'next' => ['slug' => 'imaji-digital', 'title' => 'IMAJI DIGITAL'],
