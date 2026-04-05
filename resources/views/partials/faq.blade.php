@@ -51,6 +51,7 @@
                                 ['id' => 'q6', 'q' => 'How long does a project take?'],
                                 ['id' => 'q7', 'q' => 'Do you work with international clients?'],
                                 ['id' => 'q8', 'q' => 'Can you work on an existing project?'],
+                                ['id' => 'q13', 'q' => 'What are you studying now?'],
                             ],
                         ],
                         [
@@ -169,7 +170,7 @@
         const KB = {
             q1: {
                 q: "What tech stack do you use?",
-                a: `My core stack is Laravel and PHP on the backend and vanilla JS with CSS on the frontend. For databases I use MySQL and PostgreSQL, with Redis for caching. I also work with Tailwind CSS, Alpine.js, Docker, and have experience with AR.js and Three.js for 3D and AR web experiences.`
+                a: `My core stack is Laravel and PHP on the backend and vanilla JS with CSS on the frontend. For databases I use MySQL, and for Auth i usually use Laravel Sanctum. I also work with Tailwind CSS, and have experience with AR.js and Three.js for 3D and AR web experiences.`
             },
             q2: {
                 q: "Do you work with React or Vue?",
@@ -177,15 +178,15 @@
             },
             q3: {
                 q: "Can you build a REST API?",
-                a: `Absolutely — REST API development is one of my strongest areas. I've built multi-tenant SaaS APIs with Laravel Sanctum authentication, rate limiting, webhook systems, and Swagger OpenAPI documentation. Check out OOP WEB API in my projects section for an example.`
+                a: `REST API development is one of the areas I'm actively developing. I've built a structured REST API with Laravel Sanctum authentication, role-based access control for multiple user types, a gamified course unlock system, and server-side exercise evaluation. Check out OOP School in my projects section for an example.`
             },
             q4: {
                 q: "Do you know DevOps / deployment?",
-                a: `Yes. I handle deployments using Docker, Linux servers, CI/CD pipelines via GitHub Actions, and cloud platforms. I can set up zero-downtime deployments, configure Nginx, manage SSL, and set up monitoring. I make sure what I build runs reliably in production.`
+                a: `Yes. I handle deployments using Vercel and I'm currently expanding my skills into Docker and CI/CD pipelines with GitHub Actions. I'm learning how to manage Linux servers, configure Nginx, and set up more robust production environments. I make sure what I build runs reliably, and I'm actively growing my DevOps knowledge.`
             },
             q5: {
                 q: "What kind of projects do you take?",
-                a: `I take on web applications, REST APIs and SaaS platforms, e-commerce sites, admin dashboards and CMS systems, product catalog and landing pages, and 3D and AR web experiences. Both greenfield projects and improvements to existing codebases.`
+                a: `I take on REST APIs and SaaS platforms, e-commerce sites, admin dashboards and CMS systems, product catalog and landing pages, and 3D and AR web experiences. Both greenfield projects and improvements to existing codebases.`
             },
             q6: {
                 q: "How long does a project take?",
@@ -197,7 +198,7 @@
             },
             q8: {
                 q: "Can you work on an existing project?",
-                a: `Yes — I'm comfortable jumping into existing codebases. I take time to understand the architecture first before making changes, write clean commits, and never break what's already working. I've done code reviews, performance optimizations, and feature additions on projects I didn't originally build.`
+                a: `Yes I'm comfortable jumping into existing codebases. I take time to understand the architecture first before making changes, write clean commits, and never break what's already working. I've done code reviews, performance optimizations, and feature additions on projects I didn't originally build.`
             },
             q9: {
                 q: "Are you available for freelance?",
@@ -213,7 +214,11 @@
             },
             q12: {
                 q: "How do I start a project with you?",
-                a: `Simple — just fill in the contact form below with a brief description of what you want to build, your rough timeline, and any designs or references you have. I'll reply within 24 hours to schedule a discovery call where we scope everything out properly.`
+                a: `Simply fill in the contact form below with a brief description of what you want to build, your rough timeline, and any designs or references you have. I'll reply within 24 hours or if you need a faster response, feel free to reach out directly via WhatsApp. Either way, we'll schedule a discovery call to scope everything out properly.`
+            },
+            q13: {
+                q: "What are you studying now?",
+                a: `I'm currently expanding my skills in deployment and cloud infrastructure learning Docker, CI/CD pipelines, and diving deeper into backend development, while also exploring AI automation to build smarter, more scalable systems.`
             },
         };
 
@@ -231,6 +236,7 @@
             q10: ['rate', 'price', 'cost', 'charge', 'pay', 'money', 'budget', 'fee'],
             q11: ['fulltime', 'full-time', 'permanent', 'ongoing', 'retainer'],
             q12: ['start', 'begin', 'contact', 'reach', 'how', 'process', 'step'],
+            q13: ['study', 'learning', 'skills', 'currently', 'now', 'focus'],
         };
 
         function findBestMatch(input) {
