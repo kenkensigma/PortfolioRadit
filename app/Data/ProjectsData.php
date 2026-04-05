@@ -63,7 +63,7 @@ class ProjectsData
                 'tech' => [
                     'Backend'  => ['None (Static Site)'],
                     'Frontend' => ['HTML5', 'CSS3', 'Vanilla JavaScript', 'Google Model Viewer'],
-                    'Tools'    => ['GLB/GLTF', 'Google Fonts', 'Git'],
+                    'Tools'    => ['GLB/GLTF', 'Google Fonts', 'Git', 'VS Code'],
                 ],
 
                 'info' => [
@@ -124,7 +124,7 @@ class ProjectsData
                 'tech' => [
                     'Backend'  => ['Laravel 12', 'PHP 8.2', 'MySQL'],
                     'Auth'     => ['Laravel Sanctum'],
-                    'Tools'    => ['Thunder Client', 'Laravel Eloquent', 'ngrok'],
+                    'Tools'    => ['Thunder Client', 'Laravel Eloquent', 'ngrok', 'VS Code'],
                 ],
 
                 'info' => [
@@ -179,7 +179,7 @@ class ProjectsData
                     'Backend'  => ['Laravel', 'PHP 8.2', 'MySQL', 'Javascript'],
                     'Frontend' => ['CSS', 'HTML5', 'Blade'],
                     'Storage'  => ['Laravel Storage'],
-                    'Tools'    => ['Git'],
+                    'Tools'    => ['Git', 'VS Code'],
                 ],
 
                 'info' => [
@@ -237,7 +237,7 @@ class ProjectsData
                     'Backend'   => ['Laravel 12', 'PHP 8.2', 'MySQL'],
                     'Frontend'  => ['Blade Templates', 'Bootstrap 5', 'Chart.js'],
                     'Auth'      => ['Laravel Auth', 'Custom Role Middleware'],
-                    'Tools'     => ['Eloquent ORM', 'Form Requests', 'DB Transactions', 'Git'],
+                    'Tools'     => ['Eloquent ORM', 'Form Requests', 'DB Transactions', 'Git', 'VS Code'],
                 ],
 
                 'info' => [
@@ -247,123 +247,153 @@ class ProjectsData
                     'Duration' => '2 weeks',
                 ],
 
-                'next' => ['slug' => 'imaji-digital', 'title' => 'IMAJI DIGITAL'],
+                'next' => ['slug' => 'bible-bake', 'title' => 'bible-bake'],
             ],
 
-            'Bible-Bake Website' => [
+            'bible-bake' => [
                 'num'    => '05',
                 'slug'   => 'bible-bake',
                 'title'  => 'Bible-Bake Website',
-                'type'   => 'Website',
-                'desc'   => 'A modern, responsive website for a baking business with online ordering capabilities.',
+                'type'   => 'Landing Page / E-Commerce UI',
+                'desc'   => 'A modern, aesthetic landing page for a bakery brand featuring interactive UI, animated elements, and a simple shopping cart experience.',
                 'color'  => '#1a1200',
-                'accent' => '#fbbf24',
+                'accent' => '#f472b6',
                 'url'    => '',
-                'github' => '',
+                'github' => 'https://github.com/Bagusnugraha14/donut-web-client',
 
                 'overview' => [
-                    'Vault CMS is a headless content management system with a focus on developer experience. Content is managed through a clean, minimal editor interface and served to any frontend via a well-documented REST API.',
-                    'Key differentiators include full content versioning with rollback, a flexible media library with folder organisation, role-based access control for editorial teams, and a webhook system to notify frontends of content changes.',
+                    'Bible-Bake is a modern and visually engaging bakery landing page inspired by contemporary dessert brands. The project focuses on delivering an immersive user experience through a combination of aesthetic design, smooth animations, and intuitive interaction patterns. Every section is carefully structured to highlight products in a way that feels both appetising and easy to explore.',
+
+                    'The website features a playful yet clean interface, using soft color palettes, gradients, and micro-interactions to create a lively atmosphere. From the hero section to the product listings, each element is designed to guide users naturally while maintaining visual appeal. The layout prioritises clarity and hierarchy, ensuring that users can quickly understand the content without feeling overwhelmed.',
+
+                    'Beyond visual design, the project also implements interactive functionality such as a dynamic cart system, allowing users to simulate a real shopping experience. This adds depth to the landing page, transforming it from a static showcase into a more functional and engaging interface.',
+
+                    'This project demonstrates strong attention to UI/UX principles, front-end development skills, and the ability to balance creativity with usability. It reflects a practical approach to building modern web interfaces that are not only visually appealing but also responsive and user-friendly across different devices.',
                 ],
 
+
                 'images' => [
-                    ['src' => 'images/projects/vault-cms/editor.jpg',   'caption' => 'Content Editor'],
-                    ['src' => 'images/projects/vault-cms/media.jpg',    'caption' => 'Media Library'],
-                    ['src' => 'images/projects/vault-cms/versions.jpg', 'caption' => 'Content Versioning'],
-                    ['src' => 'images/projects/vault-cms/api.jpg',      'caption' => 'REST API Explorer'],
+                    ['src' => 'images/projects/bible-bake/hero.png',   'caption' => 'Hero Section'],
+                    ['src' => 'images/projects/bible-bake/menu.png',   'caption' => 'Product Menu'],
+                    ['src' => 'images/projects/bible-bake/reviews.png', 'caption' => 'Customer Reviews'],
+                    ['src' => 'images/projects/bible-bake/cart.png',   'caption' => 'Cart Interaction'],
                 ],
 
                 'features' => [
-                    ['title' => 'Headless Architecture', 'desc' => 'Content is fully decoupled from presentation. Serve it to any frontend — web, mobile, or third-party apps — via REST API.'],
-                    ['title' => 'Content Versioning',    'desc' => 'Every edit is saved as a version. Roll back to any previous version with a single click, with a full diff view.'],
-                    ['title' => 'Media Library',         'desc' => 'Organised media library with folder structure, image optimisation on upload, and S3-compatible storage support.'],
-                    ['title' => 'Role-Based Access',     'desc' => 'Fine-grained permissions: Admins, Editors, and Viewers each have different capabilities across content types.'],
+                    [
+                        'title' => 'Modern Aesthetic UI',
+                        'desc'  => 'Designed with a playful and visually appealing style using gradients, soft colors, and smooth animations to enhance user engagement.',
+                    ],
+                    [
+                        'title' => 'Interactive Cart System',
+                        'desc'  => 'Users can add items to a cart, adjust quantities, and view total prices dynamically without page reload.',
+                    ],
+                    [
+                        'title' => 'Smooth Animations',
+                        'desc'  => 'Includes multiple custom animations such as floating elements, hover effects, and transitions to create a lively browsing experience.',
+                    ],
+                    [
+                        'title' => 'Responsive Design',
+                        'desc'  => 'Optimised for both desktop and mobile devices, ensuring consistent layout and usability across screen sizes.',
+                    ],
                 ],
 
                 'challenges' => [
                     [
-                        'challenge' => 'Building an efficient content versioning system without bloating the database',
-                        'solution'  => 'Stored versions as JSON snapshots with a diff algorithm to only save changes between versions, reducing storage by ~60% compared to full copies.',
+                        'challenge' => 'Maintaining performance with many animations and visual effects',
+                        'solution'  => 'Optimised CSS animations and limited heavy effects while ensuring smooth transitions across devices.',
                     ],
                     [
-                        'challenge' => 'S3 storage compatibility without hard-locking to AWS',
-                        'solution'  => 'Used Laravel\'s Filesystem abstraction with a driver interface, allowing the CMS to work with AWS S3, DigitalOcean Spaces, MinIO, or local storage by changing a single config value.',
+                        'challenge' => 'Creating an engaging UI without overwhelming users',
+                        'solution'  => 'Balanced playful design with clean layout structure, ensuring readability and usability remain the priority.',
                     ],
                 ],
 
                 'tech' => [
-                    'Backend'  => ['Laravel', 'PHP 8.2', 'MySQL'],
-                    'Storage'  => ['AWS S3 / S3-compatible', 'Laravel Filesystem'],
-                    'API'      => ['REST API', 'Laravel Sanctum'],
-                    'Tools'    => ['Redis', 'Laravel Queues', 'Git'],
+                    'Frontend' => ['HTML5', 'CSS3', 'JavaScript'],
+                    'Design'   => ['Custom CSS Animations', 'Responsive Layout'],
+                    'Tools'    => ['Git', 'VS Code'],
                 ],
 
                 'info' => [
-                    'Type'     => 'CMS / SaaS',
-                    'Year'     => '2024',
-                    'Role'     => 'Full Stack Developer',
-                    'Duration' => '5 weeks',
+                    'Type'     => 'Landing Page',
+                    'Year'     => '2026',
+                    'Role'     => 'Frontend Developer',
+                    'Duration' => '1 week',
                 ],
 
                 'next' => ['slug' => 'imaji-digital', 'title' => 'IMAJI DIGITAL'],
             ],
-            'House of Burger Website' => [
+
+            'house-of-burger' => [
                 'num'    => '06',
                 'slug'   => 'house-of-burger',
                 'title'  => 'House of Burger Website',
                 'type'   => 'Website',
-                'desc'   => 'A modern, responsive website for a burger restaurant with online ordering capabilities.',
-                'color'  => '#1a1200',
-                'accent' => '#fbbf24',
-                'url'    => '',
-                'github' => '',
+                'desc'   => 'A modern and visually appealing burger restaurant website designed to showcase menu items and provide a seamless online ordering experience.',
+                'color' => '#100a1a',
+                'accent' => '#a78bfa',  
+                'url'    => 'https://house-of-burger-seven.vercel.app/',
+                'github' => 'https://github.com/kenkensigma/House-of-Burger',
 
                 'overview' => [
-                    'Vault CMS is a headless content management system with a focus on developer experience. Content is managed through a clean, minimal editor interface and served to any frontend via a well-documented REST API.',
-                    'Key differentiators include full content versioning with rollback, a flexible media library with folder organisation, role-based access control for editorial teams, and a webhook system to notify frontends of content changes.',
+                    'House of Burger is a modern restaurant website built to highlight a variety of premium burgers through a clean, bold, and visually engaging interface. The design focuses on strong branding, mouth-watering visuals, and smooth navigation to enhance user engagement.',
+                    'The website features an interactive menu section, responsive layout across devices, and a simple ordering flow that allows users to explore products and place orders easily. It is optimized for performance and designed to deliver a fast, user-friendly browsing experience.',
                 ],
 
                 'images' => [
-                    ['src' => 'images/projects/vault-cms/editor.jpg',   'caption' => 'Content Editor'],
-                    ['src' => 'images/projects/vault-cms/media.jpg',    'caption' => 'Media Library'],
-                    ['src' => 'images/projects/vault-cms/versions.jpg', 'caption' => 'Content Versioning'],
-                    ['src' => 'images/projects/vault-cms/api.jpg',      'caption' => 'REST API Explorer'],
+                    ['src' => 'images/projects/house-of-burger/hero-burger.png',   'caption' => 'Homepage Hero Section'],
+                    ['src' => 'images/projects/house-of-burger/menu-burger.png',   'caption' => 'Burger Menu Display'],
+                    ['src' => 'images/projects/house-of-burger/contact-burger.png', 'caption' => 'Contact Section View'],
+                    ['src' => 'images/projects/house-of-burger/order.png',  'caption' => 'Ordering Interface'],
                 ],
 
                 'features' => [
-                    ['title' => 'Headless Architecture', 'desc' => 'Content is fully decoupled from presentation. Serve it to any frontend — web, mobile, or third-party apps — via REST API.'],
-                    ['title' => 'Content Versioning',    'desc' => 'Every edit is saved as a version. Roll back to any previous version with a single click, with a full diff view.'],
-                    ['title' => 'Media Library',         'desc' => 'Organised media library with folder structure, image optimisation on upload, and S3-compatible storage support.'],
-                    ['title' => 'Role-Based Access',     'desc' => 'Fine-grained permissions: Admins, Editors, and Viewers each have different capabilities across content types.'],
+                    [
+                        'title' => 'Modern UI/UX Design',
+                        'desc'  => 'Clean and bold interface with strong visual hierarchy, making the website attractive and easy to navigate for users.',
+                    ],
+                    [
+                        'title' => 'Responsive Layout',
+                        'desc'  => 'Fully responsive design that works smoothly across desktop, tablet, and mobile devices.',
+                    ],
+                    [
+                        'title' => 'Interactive Menu',
+                        'desc'  => 'Dynamic menu section that showcases burger items with images, descriptions, and pricing in an engaging way.',
+                    ],
+                    [
+                        'title' => 'Online Ordering Flow',
+                        'desc'  => 'Simple and intuitive ordering experience that allows users to browse and select items quickly.',
+                    ],
                 ],
 
                 'challenges' => [
                     [
-                        'challenge' => 'Building an efficient content versioning system without bloating the database',
-                        'solution'  => 'Stored versions as JSON snapshots with a diff algorithm to only save changes between versions, reducing storage by ~60% compared to full copies.',
+                        'challenge' => 'Creating a visually appealing food layout without sacrificing performance',
+                        'solution'  => 'Optimized images and used efficient layout structuring to maintain fast loading times while keeping high-quality visuals.',
                     ],
                     [
-                        'challenge' => 'S3 storage compatibility without hard-locking to AWS',
-                        'solution'  => 'Used Laravel\'s Filesystem abstraction with a driver interface, allowing the CMS to work with AWS S3, DigitalOcean Spaces, MinIO, or local storage by changing a single config value.',
+                        'challenge' => 'Ensuring consistent design across multiple screen sizes',
+                        'solution'  => 'Implemented responsive design techniques using flexible layouts and media queries to ensure consistency on all devices.',
                     ],
                 ],
 
                 'tech' => [
-                    'Backend'  => ['Laravel', 'PHP 8.2', 'MySQL'],
-                    'Storage'  => ['AWS S3 / S3-compatible', 'Laravel Filesystem'],
-                    'API'      => ['REST API', 'Laravel Sanctum'],
-                    'Tools'    => ['Redis', 'Laravel Queues', 'Git'],
+                    'Frontend' => ['HTML', 'CSS', 'JavaScript'],
+                    'UI'       => ['Custom CSS', 'Responsive Design'],
+                    'Tools'    => ['Vercel', 'Git', 'Figma'],
                 ],
 
                 'info' => [
-                    'Type'     => 'CMS / SaaS',
-                    'Year'     => '2024',
-                    'Role'     => 'Full Stack Developer',
-                    'Duration' => '5 weeks',
+                    'Type'     => 'Restaurant Website',
+                    'Year'     => '2025',
+                    'Role'     => 'Frontend Developer',
+                    'Duration' => '1–2 weeks',
                 ],
 
                 'next' => ['slug' => 'imaji-digital', 'title' => 'IMAJI DIGITAL'],
             ],
+
 
         ];
     }
