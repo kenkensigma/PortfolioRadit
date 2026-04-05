@@ -67,10 +67,25 @@
                             style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
 
                         {{-- Floating tech tags --}}
-                        <div class="about__tech-tag about__tech-tag--1">PHP</div>
-                        <div class="about__tech-tag about__tech-tag--2">Laravel</div>
-                        <div class="about__tech-tag about__tech-tag--3">MySQL</div>
-                        <div class="about__tech-tag about__tech-tag--4">JS</div>
+                        <div class="about__tech-tag about__tech-tag--1">
+                            <i class="devicon-php-plain colored"></i>
+                            <span>PHP</span>
+                        </div>
+
+                        <div class="about__tech-tag about__tech-tag--2">
+                            <i class="devicon-laravel-plain colored"></i>
+                            <span>Laravel</span>
+                        </div>
+
+                        <div class="about__tech-tag about__tech-tag--3">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+
+                        <div class="about__tech-tag about__tech-tag--4">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JS</span>
+                        </div>
                     </div>
 
                     {{-- Corner accents --}}

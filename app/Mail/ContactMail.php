@@ -9,21 +9,27 @@ use Illuminate\Mail\Mailables\Envelope;
 class ContactMail extends Mailable
 {
     public function __construct(
-        public string $senderName,
-        public string $senderEmail,
-        public string $body,  // ← renamed from $message to $body
+        public string $name,
+        public string $email,
+        public string $userMessage
     ) {}
 
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: "New message from {$this->senderName}",
-            replyTo: [$this->senderEmail],
+            subject: 'New Message from Portfolio',
         );
     }
 
     public function content(): Content
     {
-        return new Content(view: 'emails.contact');
+        return new Content(
+            view: 'emails.contact',
+            with: [
+                'name'    => $this->name,
+                'email'   => $this->email,
+                'message' => $this->userMessage,
+            ]
+        );
     }
 }
